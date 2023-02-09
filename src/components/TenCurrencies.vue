@@ -24,22 +24,21 @@
 </script>
 
 <style>
+
   table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
     background-color: aliceblue;
   }
-  th{
-    background-color: rgb(84, 175, 255);
-  }
+  
   th, td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #e9e9e9;
+
   }
-  tr:hover {
-    background-color: coral;
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
   }
   
 </style>

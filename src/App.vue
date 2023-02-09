@@ -9,6 +9,7 @@
 </script>
 
 <template>
+  
   <nav>
     <ul>
       <li>
@@ -22,10 +23,10 @@
       </li>
     </ul>
   </nav>
-
+  <TenCurrencies wellMsg="Här har vald tio olika valutarna!" />
+  
   <main>
     <RouterView />
   </main>
   
-  <TenCurrencies wellMsg="Här har vald tio olika valutarna!" />
 </template>
