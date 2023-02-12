@@ -7,13 +7,13 @@
         .then((response) => response.json())
         .then((result) =>{
         this.currencies = result.data;
-        keyes = Object.keys(this.currencies)
         })
     },
     data(){
       return {
           backgroundImage: 'background.jpg',
-          currencies: null
+          currencies: null,
+          key:''
       }
     },
     props: {
@@ -32,7 +32,7 @@
          <th>Pris</th>
        </tr>
 
-         <template v-for="(currency, key ) in currencies" >
+         <template v-for="( currency, key ) in currencies" >
        <tr>
          <td> {{key}} </td>
          <td> {{ currency}} </td>

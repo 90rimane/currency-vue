@@ -7,8 +7,6 @@
         .then((response) => response.json())
         .then((result) =>{
         this.currencies = result.data;
-        keyes = Object.keys(this.currencies)
-        console.log(keyes)
         })
     },
     data(){
