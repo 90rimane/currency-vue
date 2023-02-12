@@ -60,18 +60,19 @@
 
     <div>
         <h2>USD</h2>
-        <p>Pris: 1 USD</p>
+        <p>Pris: 1 </p>
           <input 
             type="text" 
             v-model.number = "inputField1" 
-            @keyup = "updateField2" >
+            @keyup = "updateField2" 
+            placeholder=" Dollar">
     </div>
 
     <div>
         <h2> <span style="font-size: small;">Till</span> {{ currencyCode }} </h2>
-        <p>Pris: {{ selectedRate }}  USD</p>
+        <p>Pris: {{ selectedRate }} </p>
         <input 
             type="text" 
-            :value="textfield2" >
+            :value="textfield2 + ' ' + currencyCode" >
     </div>
 </template>

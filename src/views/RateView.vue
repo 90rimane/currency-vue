@@ -25,7 +25,7 @@
 <template>
     <p></p>
   <dl v-if="currencies !== null">
-    <h2>{{ wellMsg }} </h2>
+    <h2>Datum  för idag: </h2>
       <table>
        <tr>
          <th>Valutakod</th>
