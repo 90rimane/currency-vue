@@ -1,0 +1,38 @@
+@import 'bootstrap/scss/bootstrap';
+
+$background: url(/assets/background.jpg) no-repeat;
+$body-color: rgba ( 255,255,255, 0.9 );
+$font-color: #000;
+$blue-dark: #1d2f50;
+$blue-med: #5980c3;
+$blue-light: #cdd8ed;
+$font: 'Montserrat', sans-serif;
+
+
+body{
+	background: $body-color;
+	color: $font-color;
+}
+
+.convert{
+	background: $blue-light;
+	margin: 20px auto;
+	
+	padding: 20px;
+	width: 50%;
+	height: auto;
+}
+.select{
+	text-align: left;
+	margin: auto;
+	padding: 10px;
+}
+
+.fields{
+	margin-top: 20px;
+	display: inline-flex;
+	text-align: left;
+}
+.field2{
+	margin-left: 25%;
+}

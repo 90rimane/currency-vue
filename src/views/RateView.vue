@@ -16,30 +16,65 @@
           key:''
       }
     },
+    methods: {
+      currentDate() {
+        const current = new Date();
+        const date = `
+        ${current.getFullYear()}-${current.getMonth()+1}-${current.getDate()} *** 
+        kl.${current.getHours()}:${current.getMinutes()}
+        `;
+        return date;
+      }
+    },
     props: {
       wellMsg: String
     }
   }
 </script>
 
+<style scoped>
+body{
+  margin: 0;
+}
+main{
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  margin: auto;
+}
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {background-color: coral;}
+</style>
+
 <template>
-    <p></p>
-  <dl v-if="currencies !== null">
-    <h2>Datum  för idag: </h2>
-      <table>
-       <tr>
-         <th>Valutakod</th>
-         <th>Pris</th>
-       </tr>
+  <main>
+    <dl v-if="currencies !== null">
+      <h2>{{ currentDate() }}</h2>
+        <table>
+        <tr>
+          <th>Valutakod</th>
+          <th>Pris</th>
+        </tr>
 
-         <template v-for="( currency, key ) in currencies" >
-       <tr>
-         <td> {{key}} </td>
-         <td> {{ currency}} </td>
-       </tr>    
-         </template>
+          <template v-for="( currency, key ) in currencies" >
+        <tr>
+          <td> {{key}} </td>
+          <td> {{ currency.toFixed(2)}} </td>
+        </tr>    
+          </template>
 
-      </table>
-   </dl>
-        <p v-else>Laddar...</p>
+        </table>
+    </dl>
+          <p v-else>Laddar...</p>
+  </main>
 </template>

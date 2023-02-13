@@ -21,13 +21,24 @@
   }
 </script>
 
-<style>
-
+<style scoped>
+body{
+  margin: 0;
+  padding: 20px;
+}
+main{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
   table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
     background-color: aliceblue;
+    border: solid 1px;
+    box-shadow: 4px 2px 2px black;
   }
   
   th, td {
@@ -38,11 +49,15 @@
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+  footer{
+    margin: 20px auto;
+  }
   
 </style>
 
 <template>
-  <dl v-if="currencies !== null">
+  <main>
+    <dl v-if="currencies !== null">
             <h2>{{ wellMsg }} </h2>
             <table>
                 <tr>
@@ -62,4 +77,8 @@
             </table>
         </dl>
         <p v-else>Laddar...</p>
+        <footer>
+          <p>Inlämningsuppgift 02 / Ali Mesbahi</p>
+        </footer>
+  </main>
 </template>

@@ -48,31 +48,39 @@
 </script>
 
 <template>
-    <h2>konvertera</h2>
-
+<div class="border border-4 convert">
+    <h2>Konvertera</h2>
+  <div class="select">
     <label>Valuta</label>
-      <select v-model = "selected" @click="handleSelected">   
+      <select 
+        v-model = "selected" 
+        @click="handleSelected"
+        class="form-select">  
         <option 
           v-for="(rate, correncyCode ) in rates">
           {{ correncyCode }} {{ rate.toFixed(2) }}
         </option>
       </select>
+  </div>
+    <div class="fields">
+        <div class="field1">
+            <h2>USD</h2>
+            <p>Pris: 1 </p>
+            <input class="form-control"
+                type="text" 
+                v-model.number = "inputField1" 
+                @keyup = "updateField2" 
+                placeholder=" Dollar">
+        </div>
 
-    <div>
-        <h2>USD</h2>
-        <p>Pris: 1 </p>
-          <input 
-            type="text" 
-            v-model.number = "inputField1" 
-            @keyup = "updateField2" 
-            placeholder=" Dollar">
+        <div class="field2">
+            <h2> <span style="font-size: small;">Till</span> {{ currencyCode }} </h2>
+            <p>Pris: {{ selectedRate }} </p>
+            <input class="form-control"
+                type="text" 
+                :value="textfield2 + ' ' + currencyCode"
+                >
+        </div>
     </div>
-
-    <div>
-        <h2> <span style="font-size: small;">Till</span> {{ currencyCode }} </h2>
-        <p>Pris: {{ selectedRate }} </p>
-        <input 
-            type="text" 
-            :value="textfield2 + ' ' + currencyCode" >
-    </div>
+</div>
 </template>
