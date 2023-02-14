@@ -7,5 +7,5 @@ h2{
 }
 </style>
 <template>
-    <h2>Välkommen Hem</h2>
+    <h3>>Hem</h3>
 </template>

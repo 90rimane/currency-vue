@@ -16,7 +16,7 @@
       }
     },
     props: {
-      wellMsg: String
+      wellcomeMsg: String
     }
   }
 </script>
@@ -36,7 +36,7 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(247, 251, 254);
     border: solid 1px;
     box-shadow: 4px 2px 2px black;
   }
@@ -47,7 +47,7 @@ main{
 
   }
   tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f2ecec;
   }
   footer{
     margin: 20px auto;
@@ -58,7 +58,7 @@ main{
 <template>
   <main>
     <dl v-if="currencies !== null">
-            <h2>{{ wellMsg }} </h2>
+            <h2>{{ wellcomeMsg }} </h2>
             <table>
                 <tr>
                     <th>Valutakod</th>
@@ -78,7 +78,7 @@ main{
         </dl>
         <p v-else>Laddar...</p>
         <footer>
-          <p>Inlämningsuppgift 02 / Ali Mesbahi</p>
+          <p>Inlämningsuppgift 02 | Ali Mesbahi</p>
         </footer>
   </main>
 </template>

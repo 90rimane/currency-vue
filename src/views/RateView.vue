@@ -33,18 +33,19 @@
 </script>
 
 <style scoped>
-body{
-  margin: 0;
-}
-main{
-  width: 50%;
-  height: 100%;
-  text-align: left;
-  margin: auto;
-}
+    body{
+      margin: 0;
+    }
+    main{
+      width: 50%;
+      height: 100%;
+      text-align: left;
+      margin: auto;
+    }
     table {
       border-collapse: collapse;
       width: 100%;
+      background-color:rgb(247, 251, 254);
     }
 
     th, td {
@@ -57,6 +58,7 @@ main{
 </style>
 
 <template>
+  <h3>>Priser</h3>
   <main>
     <dl v-if="currencies !== null">
       <h2>{{ currentDate() }}</h2>

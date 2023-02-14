@@ -7,22 +7,19 @@
     }
   }
 </script>
-<style lang="scss" scoped>
-
-</style>
 
 <template>
   
-  <nav >
+  <nav class="navbar navbar-light" style="background-color: #5980c3;">
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <RouterLink to="/" class="nav-link active" >Hem</RouterLink>
+        <RouterLink to="/" class="nav-link active " >Hem</RouterLink>
       </li>
       <li class="nav-item">
-        <RouterLink to="/rate" class="nav-link active">Priser</RouterLink>
+        <RouterLink to="/rate" class="nav-link active ">Priser</RouterLink>
       </li>
       <li class="nav-item">
-        <RouterLink to="/convert" class="nav-link active">Konvertera</RouterLink>
+        <RouterLink to="/convert" class="nav-link active ">Konvertera</RouterLink>
       </li >
     </ul>
   </nav>
@@ -31,6 +28,6 @@
     <RouterView />
   </main>
   
-  <TenCurrencies wellMsg="Här har vald tio olika valutarna!" />
+  <TenCurrencies wellcomeMsg="Listan av tio valutarna" />
   
 </template>

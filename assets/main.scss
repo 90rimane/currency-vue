@@ -1,23 +1,24 @@
 @import 'bootstrap/scss/bootstrap';
 
-$background: url(/assets/background.jpg) no-repeat;
+$background: url(/assets/background.jpg) no-repeat center center fixed;
 $body-color: rgba ( 255,255,255, 0.9 );
 $font-color: #000;
 $blue-dark: #1d2f50;
 $blue-med: #5980c3;
 $blue-light: #cdd8ed;
 $font: 'Montserrat', sans-serif;
+$background-size: cover;
 
 
 body{
-	background: $body-color;
+	background: $background;
+	background-size: cover;
 	color: $font-color;
 }
 
 .convert{
 	background: $blue-light;
 	margin: 20px auto;
-	
 	padding: 20px;
 	width: 50%;
 	height: auto;
@@ -29,7 +30,7 @@ body{
 }
 
 .fields{
-	margin-top: 20px;
+	margin: 20px auto;
 	display: inline-flex;
 	text-align: left;
 }
