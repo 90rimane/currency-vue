@@ -78,7 +78,7 @@ main{
         </dl>
         <p v-else>Laddar...</p>
         <footer>
-          <p>Inlämningsuppgift 02 | Ali Mesbahi</p>
+          <p>Inlämningsuppgift 01 | Ali Mesbahi</p>
         </footer>
   </main>
 </template>
