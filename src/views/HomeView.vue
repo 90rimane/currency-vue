@@ -22,7 +22,7 @@ h4{
     <h4>>Hem</h4>
     <main>
         <div>
-      <h3>Vilka är världens 15 starkaste valutor?</h3>
+      <h3>Vilka är världens 10 starkaste valutor?</h3>
       <p>Känner Du till några av världens starkaste valutor, eller någon av de svagaste? Här har vi
          gjort en ordentlig genomgång och visar upp superstarka valutor som inte går att slå. Även om
           många erfarna valutahandlare säkert vet vad som hänt under de sista åren, så förklarar vi 
