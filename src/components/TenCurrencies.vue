@@ -57,6 +57,7 @@ main{
 
 <template>
   <main>
+    
     <dl v-if="currencies !== null">
             <h2>{{ wellcomeMsg }} </h2>
             <table>

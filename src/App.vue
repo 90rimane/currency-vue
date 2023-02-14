@@ -8,9 +8,18 @@
   }
 </script>
 
+<style scoped>
+nav{
+  background-color: #627aa4;
+}
+  nav ul li{
+    margin-left: 20px;
+  }
+</style>
+
 <template>
   
-  <nav class="navbar navbar-light" style="background-color: #5980c3;">
+  <nav class="navbar navbar-light ">
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <RouterLink to="/" class="nav-link active " >Hem</RouterLink>
@@ -28,6 +37,6 @@
     <RouterView />
   </main>
   
-  <TenCurrencies wellcomeMsg="Listan av tio valutarna" />
+  <TenCurrencies wellcomeMsg="Lista över länders valutor(slumpvis)" />
   
 </template>

@@ -19,8 +19,8 @@
     methods: {
       currentDate() {
         const current = new Date();
-        const date = `
-        ${current.getFullYear()}-${current.getMonth()+1}-${current.getDate()} *** 
+        const date = ` Bas valuta är USD dollars | Idag:
+        ${current.getFullYear()}-${current.getMonth()+1}-${current.getDate()} |
         kl.${current.getHours()}:${current.getMinutes()}
         `;
         return date;
@@ -53,15 +53,21 @@
       text-align: left;
       border-bottom: 1px solid #ddd;
     }
+    h4{
+	    color: white;
+      padding-left: 20px;
+    }
 
-    tr:hover {background-color: coral;}
+    tr:hover {
+      background-color: coral;
+      }
 </style>
 
 <template>
-  <h3>>Priser</h3>
+  <h4>>Priser</h4>
   <main>
     <dl v-if="currencies !== null">
-      <h2>{{ currentDate() }}</h2>
+      <h3>{{ currentDate() }}</h3>
         <table>
         <tr>
           <th>Valutakod</th>
